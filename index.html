@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Custom Stopwatch</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <button id="brStart">B-R Start</button>
+            <button id="rbStart">R-B Start</button>
+            <button id="pause">Pause</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div class="settings">
+            <label for="numLines">Number of lines:</label>
+            <select id="numLines"></select>
+            <label for="totalLength">Total length (Ft.):</label>
+            <input type="number" id="totalLength" min="0" step="0.1"></div>
+        <canvas id="progressBar" width="600" height="400"></canvas>
+        <div id="distanceDisplay">Distance: 0.00 ft</div>
+</body>
+<script src="script.js"></script>
+</html>
+
